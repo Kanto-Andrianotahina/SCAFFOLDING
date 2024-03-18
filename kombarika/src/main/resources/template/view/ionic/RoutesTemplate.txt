@@ -1,0 +1,19 @@
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { IonApp, IonRouterOutlet } from '@ionic/react';
+import { Route } from 'react-router-dom';
+${IMPORTS}
+
+function App() {
+    return (
+        <Router>
+            <IonApp>
+                <IonRouterOutlet>
+${ROUTES}
+                </IonRouterOutlet>
+            </IonApp>
+        </Router>
+    );
+}
+
+export default App;
